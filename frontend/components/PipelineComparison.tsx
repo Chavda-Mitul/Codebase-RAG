@@ -3,10 +3,10 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
   Legend, ResponsiveContainer,
 } from 'recharts'
-import type { PipelineComparison } from '@/types'
+import type { PipelineComparison as PipelineComparisonData } from '@/types'
 
 interface Props {
-  data: PipelineComparison
+  data: PipelineComparisonData
 }
 
 const METRICS = [
@@ -40,7 +40,7 @@ export function PipelineComparison({ data }: Props) {
             contentStyle={{ background: '#1a1d27', border: '1px solid #2a2d3e', borderRadius: 8 }}
             labelStyle={{ color: '#e2e8f0' }}
             itemStyle={{ color: '#94a3b8' }}
-            formatter={(v: number) => [`${v}%`]}
+            formatter={(v) => [v != null ? `${v}%` : '']}
           />
           <Legend wrapperStyle={{ fontSize: 12, color: '#94a3b8' }} />
           {METRICS.map(m => (
