@@ -1,0 +1,98 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+wheels/
+.eggs/
+pip-wheel-metadata/
+
+# uv
+.python-version
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.lcov
+.tox/
+
+# Type checking / linting
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ML model cache (sentence-transformers, HuggingFace)
+.cache/
+models/
+*.bin
+*.safetensors
+*.ot
+*.onnx
+
+# Tree-sitter compiled grammars
+*.so
+build/
+
+# Data / cloned repos / databases
+data/
+repos/
+*.db
+*.sqlite
+*.sqlite3
+neo4j_data/
+neo4j_logs/
+neo4j_import/
+neo4j_plugins/
+
+# Eval output
+results/
+*.json.bak
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Docker
+.dockerignore
+
+# Node / Next.js (frontend)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env
+frontend/.env.local
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Temp / OS
+tmp/
+temp/
+*.tmp
+*.bak
