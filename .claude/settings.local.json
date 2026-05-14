@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\GEN AI\\\\Code-RAG\" -Recurse -Force | Select-Object FullName | ForEach-Object { $_.FullName } | Sort-Object)",
+      "Bash(uv run *)",
+      "Bash(npm install *)"
+    ]
+  }
+}
